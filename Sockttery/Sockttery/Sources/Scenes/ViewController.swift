@@ -65,6 +65,13 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func goMypage(_ sender: UIButton) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyPage") as? MypageVC {
+                vc.modalPresentationStyle = .fullScreen
+        
+                self.present(vc, animated: true, completion: nil)   // 식별자 가르키는 곳으로 이동
+            }
+    }
     
     
 }

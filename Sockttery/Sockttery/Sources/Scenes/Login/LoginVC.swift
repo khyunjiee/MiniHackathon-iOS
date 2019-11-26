@@ -47,30 +47,36 @@ class LoginVC: UIViewController {
 
     @IBAction func doLogin(_ sender: UIButton) {
         
-        guard let id = userId.text else { return }
-        guard let pwd = userpw.text else { return }
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main") as? ViewController {
+                vc.modalPresentationStyle = .fullScreen
         
-        LoginService.loginShared.login(id, pwd) {
-            data in
-            
-            switch data {
-                
-            case .success(let data):
-                print(data)
-                print("login success")
-            case .requestError(let message) :
-                print(message)
-                break
-            case .serverErr:
-                print(".serverErr")
-            case .pathErr :
-                print(".pathErr")
-            case .networkFail:
-                print(".networkFail")
-                break
+                self.present(vc, animated: true, completion: nil)   // 식별자 가르키는 곳으로 이동
             }
-            
-            
+//
+//        guard let id = userId.text else { return }
+//        guard let pwd = userpw.text else { return }
+//
+//        LoginService.loginShared.login(id, pwd) {
+//            data in
+//
+//            switch data {
+//
+//            case .success(let data):
+//                print(data)
+//                print("login success")
+//            case .requestError(let message) :
+//                print(message)
+//                break
+//            case .serverErr:
+//                print(".serverErr")
+//            case .pathErr :
+//                print(".pathErr")
+//            case .networkFail:
+//                print(".networkFail")
+//                break
+//            }
+//
+//
         }
         
         
@@ -80,4 +86,4 @@ class LoginVC: UIViewController {
         
     }
     
-}
+

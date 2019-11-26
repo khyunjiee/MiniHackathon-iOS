@@ -39,5 +39,12 @@ class MypageVC: UIViewController {
         self.present(myAlert, animated: true, completion: nil)
     }
     
-
+    @IBAction func goMain(_ sender: UIButton) {
+        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main") as? ViewController {
+                vc.modalPresentationStyle = .fullScreen
+        
+                self.present(vc, animated: true, completion: nil)   // 식별자 가르키는 곳으로 이동
+            }
+    }
+    
 }
