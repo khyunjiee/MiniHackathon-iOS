@@ -1,0 +1,16 @@
+//
+//  APIConstants.swift
+//  Sockttery
+//
+//  Created by 김현지 on 2019/11/26.
+//  Copyright © 2019 김현지. All rights reserved.
+//
+
+import Foundation
+
+struct APIConstants {
+    static let BaseURL = ""
+    
+    static let SignupURL = BaseURL + "/signup"
+    static let MypageURL = BaseURL + "/mypage"
+}
