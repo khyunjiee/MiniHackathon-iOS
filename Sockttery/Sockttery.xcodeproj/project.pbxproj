@@ -22,8 +22,6 @@
 		523C73C6238D63380056052A /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73BE238D63380056052A /* UIImageView+Extensions.swift */; };
 		523C73C7238D63380056052A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73BF238D63380056052A /* UIColor+Extensions.swift */; };
 		523C73C8238D63380056052A /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73C0238D63380056052A /* UINavigationBar+Extension.swift */; };
-		B6A41438238D68C50052484A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A41437238D68C50052484A /* Login.storyboard */; };
-		B6A4143B238D69240052484A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143A238D69240052484A /* LoginVC.swift */; };
 		523C73CC238D67700056052A /* Signup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523C73CB238D67700056052A /* Signup.storyboard */; };
 		523C73CE238D685A0056052A /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73CD238D685A0056052A /* SignupVC.swift */; };
 		523C73D0238D693C0056052A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73CF238D693C0056052A /* NetworkResult.swift */; };
@@ -40,6 +38,14 @@
 		523C73ED238DA7020056052A /* NanumGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73EA238DA7020056052A /* NanumGothic-Bold.ttf */; };
 		523C73F1238DA7510056052A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73F0238DA7510056052A /* UIFontExtension.swift */; };
 		523C73F3238DA7D80056052A /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73F2238DA7D80056052A /* FredokaOne-Regular.ttf */; };
+		523C73D5238D6B360056052A /* ResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73D4238D6B360056052A /* ResponseString.swift */; };
+		B6A41438238D68C50052484A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A41437238D68C50052484A /* Login.storyboard */; };
+		B6A4143B238D69240052484A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143A238D69240052484A /* LoginVC.swift */; };
+		B6A4143D238D724E0052484A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143C238D724E0052484A /* LoginService.swift */; };
+		B6A4143F238D72E70052484A /* LoginResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143E238D72E70052484A /* LoginResponseString.swift */; };
+		B6A4144C238DA53D0052484A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4144B238DA53D0052484A /* UIFontExtension.swift */; };
+		B6A4144D238DA5830052484A /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6A41446238D9F350052484A /* FredokaOne-Regular.ttf */; };
+		B6B416CC238DCA7D003AE038 /* MainAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B416CB238DCA7D003AE038 /* MainAlertVC.swift */; };
 		FA38639328F885A25DF72D38 /* Pods_Sockttery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +88,11 @@
 		A715D4876798572E445DA1D8 /* Pods-Sockttery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sockttery.release.xcconfig"; path = "Target Support Files/Pods-Sockttery/Pods-Sockttery.release.xcconfig"; sourceTree = "<group>"; };
 		B6A41437238D68C50052484A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		B6A4143A238D69240052484A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B6A4143C238D724E0052484A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		B6A4143E238D72E70052484A /* LoginResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseString.swift; sourceTree = "<group>"; };
+		B6A41446238D9F350052484A /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FredokaOne-Regular.ttf"; path = "../../../../../../Fredoka_One/FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
+		B6A4144B238DA53D0052484A /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		B6B416CB238DCA7D003AE038 /* MainAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlertVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +165,7 @@
 				523C73DC238D7FDB0056052A /* Mypage */,
 				523C73C9238D67400056052A /* Signup */,
 				523C73B7238D623D0056052A /* ViewController.swift */,
+				B6B416CB238DCA7D003AE038 /* MainAlertVC.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -163,8 +175,10 @@
 			children = (
 				523C73B5238D620B0056052A /* SignupService.swift */,
 				523C73CF238D693C0056052A /* NetworkResult.swift */,
+				B6A4143E238D72E70052484A /* LoginResponseString.swift */,
 				523C73D1238D6A9E0056052A /* APIConstants.swift */,
 				523C73E5238DA1F60056052A /* MypageService.swift */,
+				B6A4143C238D724E0052484A /* LoginService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -251,6 +265,14 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		B6A41445238D9F250052484A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				B6A41446238D9F350052484A /* FredokaOne-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		E397FA486A74FE05ABE9E234 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +352,7 @@
 				523C73EC238DA7020056052A /* NanumGothic-ExtraBold.ttf in Resources */,
 				523C73CC238D67700056052A /* Signup.storyboard in Resources */,
 				523C739D238D565F0056052A /* Main.storyboard in Resources */,
+				B6A4144D238DA5830052484A /* FredokaOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,10 +410,13 @@
 				523C73C6238D63380056052A /* UIImageView+Extensions.swift in Sources */,
 				523C73B6238D620B0056052A /* SignupService.swift in Sources */,
 				523C73C3238D63380056052A /* UIButton+Extensions.swift in Sources */,
+				B6B416CC238DCA7D003AE038 /* MainAlertVC.swift in Sources */,
 				523C7396238D565F0056052A /* AppDelegate.swift in Sources */,
 				523C73E2238D917A0056052A /* WithdrawAlertVC.swift in Sources */,
 				523C73E6238DA1F60056052A /* MypageService.swift in Sources */,
 				523C73B8238D623D0056052A /* ViewController.swift in Sources */,
+				523C73D5238D6B360056052A /* ResponseString.swift in Sources */,
+				B6A4144C238DA53D0052484A /* UIFontExtension.swift in Sources */,
 				523C73C8238D63380056052A /* UINavigationBar+Extension.swift in Sources */,
 				523C73F1238DA7510056052A /* UIFontExtension.swift in Sources */,
 				523C73CE238D685A0056052A /* SignupVC.swift in Sources */,
@@ -401,8 +427,10 @@
 				523C73C2238D63380056052A /* NSNotificationName+Extension.swift in Sources */,
 				B6A4143B238D69240052484A /* LoginVC.swift in Sources */,
 				523C73C7238D63380056052A /* UIColor+Extensions.swift in Sources */,
+				B6A4143D238D724E0052484A /* LoginService.swift in Sources */,
 				523C73D2238D6A9E0056052A /* APIConstants.swift in Sources */,
 				523C73C4238D63380056052A /* UIView+Extensions.swift in Sources */,
+				B6A4143F238D72E70052484A /* LoginResponseString.swift in Sources */,
 				523C73C1238D63380056052A /* UITabbar+Extension.swift in Sources */,
 				523C73D0238D693C0056052A /* NetworkResult.swift in Sources */,
 			);
