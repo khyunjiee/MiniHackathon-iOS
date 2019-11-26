@@ -22,6 +22,8 @@
 		523C73C6238D63380056052A /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73BE238D63380056052A /* UIImageView+Extensions.swift */; };
 		523C73C7238D63380056052A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73BF238D63380056052A /* UIColor+Extensions.swift */; };
 		523C73C8238D63380056052A /* UINavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73C0238D63380056052A /* UINavigationBar+Extension.swift */; };
+		B6A41438238D68C50052484A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A41437238D68C50052484A /* Login.storyboard */; };
+		B6A4143B238D69240052484A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143A238D69240052484A /* LoginVC.swift */; };
 		FA38639328F885A25DF72D38 /* Pods_Sockttery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +48,8 @@
 		523C73C0238D63380056052A /* UINavigationBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+Extension.swift"; sourceTree = "<group>"; };
 		7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sockttery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A715D4876798572E445DA1D8 /* Pods-Sockttery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sockttery.release.xcconfig"; path = "Target Support Files/Pods-Sockttery/Pods-Sockttery.release.xcconfig"; sourceTree = "<group>"; };
+		B6A41437238D68C50052484A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		B6A4143A238D69240052484A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +116,7 @@
 		523C73AC238D56B60056052A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B6A41439238D69080052484A /* Login */,
 				523C73B7238D623D0056052A /* ViewController.swift */,
 			);
 			path = Scenes;
@@ -145,6 +150,7 @@
 			children = (
 				523C739B238D565F0056052A /* Main.storyboard */,
 				523C73A0238D56630056052A /* LaunchScreen.storyboard */,
+				B6A41437238D68C50052484A /* Login.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -155,6 +161,14 @@
 				7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6A41439238D69080052484A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B6A4143A238D69240052484A /* LoginVC.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		E397FA486A74FE05ABE9E234 /* Pods */ = {
@@ -226,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A41438238D68C50052484A /* Login.storyboard in Resources */,
 				523C73A2238D56630056052A /* LaunchScreen.storyboard in Resources */,
 				523C739F238D56630056052A /* Assets.xcassets in Resources */,
 				523C739D238D565F0056052A /* Main.storyboard in Resources */,
@@ -290,6 +305,7 @@
 				523C73C5238D63380056052A /* UIViewController+Extensions.swift in Sources */,
 				523C7398238D565F0056052A /* SceneDelegate.swift in Sources */,
 				523C73C2238D63380056052A /* NSNotificationName+Extension.swift in Sources */,
+				B6A4143B238D69240052484A /* LoginVC.swift in Sources */,
 				523C73C7238D63380056052A /* UIColor+Extensions.swift in Sources */,
 				523C73C4238D63380056052A /* UIView+Extensions.swift in Sources */,
 				523C73C1238D63380056052A /* UITabbar+Extension.swift in Sources */,
