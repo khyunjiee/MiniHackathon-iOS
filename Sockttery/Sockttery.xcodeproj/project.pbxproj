@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		523C7396238D565F0056052A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C7395238D565F0056052A /* AppDelegate.swift */; };
+		523C7398238D565F0056052A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C7397238D565F0056052A /* SceneDelegate.swift */; };
+		523C739A238D565F0056052A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C7399238D565F0056052A /* ViewController.swift */; };
+		523C739D238D565F0056052A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523C739B238D565F0056052A /* Main.storyboard */; };
+		523C739F238D56630056052A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523C739E238D56630056052A /* Assets.xcassets */; };
+		523C73A2238D56630056052A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523C73A0238D56630056052A /* LaunchScreen.storyboard */; };
+		FA38639328F885A25DF72D38 /* Pods_Sockttery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		27958E2C1857BA96467B987C /* Pods-Sockttery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sockttery.debug.xcconfig"; path = "Target Support Files/Pods-Sockttery/Pods-Sockttery.debug.xcconfig"; sourceTree = "<group>"; };
+		523C7392238D565F0056052A /* Sockttery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sockttery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		523C7395238D565F0056052A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		523C7397238D565F0056052A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		523C7399238D565F0056052A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		523C739C238D565F0056052A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		523C739E238D56630056052A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		523C73A1238D56630056052A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		523C73A3238D56630056052A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sockttery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A715D4876798572E445DA1D8 /* Pods-Sockttery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sockttery.release.xcconfig"; path = "Target Support Files/Pods-Sockttery/Pods-Sockttery.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		523C738F238D565F0056052A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA38639328F885A25DF72D38 /* Pods_Sockttery.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		523C7389238D565F0056052A = {
+			isa = PBXGroup;
+			children = (
+				523C7394238D565F0056052A /* Sockttery */,
+				523C7393238D565F0056052A /* Products */,
+				E397FA486A74FE05ABE9E234 /* Pods */,
+				871405CFBD1C9AB9B5556085 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		523C7393238D565F0056052A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				523C7392238D565F0056052A /* Sockttery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		523C7394238D565F0056052A /* Sockttery */ = {
+			isa = PBXGroup;
+			children = (
+				523C7395238D565F0056052A /* AppDelegate.swift */,
+				523C7397238D565F0056052A /* SceneDelegate.swift */,
+				523C73A3238D56630056052A /* Info.plist */,
+				523C73AA238D56700056052A /* Resources */,
+				523C73A9238D566B0056052A /* Sources */,
+			);
+			path = Sockttery;
+			sourceTree = "<group>";
+		};
+		523C73A9238D566B0056052A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				523C73AF238D56D20056052A /* Model */,
+				523C73AE238D56CB0056052A /* Extensions */,
+				523C73AD238D56C00056052A /* Networking */,
+				523C73AC238D56B60056052A /* Scenes */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		523C73AA238D56700056052A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				523C73B4238D57340056052A /* Storyboards */,
+				523C739E238D56630056052A /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		523C73AC238D56B60056052A /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				523C73B3238D57030056052A /* Signup */,
+				523C73B2238D56FA0056052A /* Login */,
+				523C73B1238D56F10056052A /* Mypage */,
+				523C73B0238D56DE0056052A /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		523C73AD238D56C00056052A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		523C73AE238D56CB0056052A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		523C73AF238D56D20056052A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		523C73B0238D56DE0056052A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				523C7399238D565F0056052A /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		523C73B1238D56F10056052A /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		523C73B2238D56FA0056052A /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		523C73B3238D57030056052A /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		523C73B4238D57340056052A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				523C739B238D565F0056052A /* Main.storyboard */,
+				523C73A0238D56630056052A /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		871405CFBD1C9AB9B5556085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E397FA486A74FE05ABE9E234 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27958E2C1857BA96467B987C /* Pods-Sockttery.debug.xcconfig */,
+				A715D4876798572E445DA1D8 /* Pods-Sockttery.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		523C7391238D565F0056052A /* Sockttery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 523C73A6238D56630056052A /* Build configuration list for PBXNativeTarget "Sockttery" */;
+			buildPhases = (
+				F098E7C4B3B50576696E9101 /* [CP] Check Pods Manifest.lock */,
+				523C738E238D565F0056052A /* Sources */,
+				523C738F238D565F0056052A /* Frameworks */,
+				523C7390238D565F0056052A /* Resources */,
+				DA46EF0C056A495AC516CC0E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sockttery;
+			productName = Sockttery;
+			productReference = 523C7392238D565F0056052A /* Sockttery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		523C738A238D565F0056052A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "김현지";
+				TargetAttributes = {
+					523C7391238D565F0056052A = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 523C738D238D565F0056052A /* Build configuration list for PBXProject "Sockttery" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 523C7389238D565F0056052A;
+			productRefGroup = 523C7393238D565F0056052A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				523C7391238D565F0056052A /* Sockttery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		523C7390238D565F0056052A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523C73A2238D56630056052A /* LaunchScreen.storyboard in Resources */,
+				523C739F238D56630056052A /* Assets.xcassets in Resources */,
+				523C739D238D565F0056052A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DA46EF0C056A495AC516CC0E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sockttery/Pods-Sockttery-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sockttery/Pods-Sockttery-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sockttery/Pods-Sockttery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F098E7C4B3B50576696E9101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sockttery-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		523C738E238D565F0056052A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523C739A238D565F0056052A /* ViewController.swift in Sources */,
+				523C7396238D565F0056052A /* AppDelegate.swift in Sources */,
+				523C7398238D565F0056052A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		523C739B238D565F0056052A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				523C739C238D565F0056052A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		523C73A0238D56630056052A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				523C73A1238D56630056052A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		523C73A4238D56630056052A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		523C73A5238D56630056052A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		523C73A7238D56630056052A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27958E2C1857BA96467B987C /* Pods-Sockttery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CYJWF25337;
+				INFOPLIST_FILE = Sockttery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunji.Sockttery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		523C73A8238D56630056052A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A715D4876798572E445DA1D8 /* Pods-Sockttery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CYJWF25337;
+				INFOPLIST_FILE = Sockttery/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunji.Sockttery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		523C738D238D565F0056052A /* Build configuration list for PBXProject "Sockttery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523C73A4238D56630056052A /* Debug */,
+				523C73A5238D56630056052A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		523C73A6238D56630056052A /* Build configuration list for PBXNativeTarget "Sockttery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523C73A7238D56630056052A /* Debug */,
+				523C73A8238D56630056052A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 523C738A238D565F0056052A /* Project object */;
+}
