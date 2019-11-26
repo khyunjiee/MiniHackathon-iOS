@@ -8,8 +8,9 @@
 
 import Foundation
 
-struct ResponseString: Codable {
+struct SignupResponseString: Codable {
     let status: Int
+    let success: Bool
     let message: String
-    let data: Int
+    let data: Int?
 }

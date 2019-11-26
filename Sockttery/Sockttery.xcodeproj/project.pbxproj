@@ -26,7 +26,18 @@
 		523C73CE238D685A0056052A /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73CD238D685A0056052A /* SignupVC.swift */; };
 		523C73D0238D693C0056052A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73CF238D693C0056052A /* NetworkResult.swift */; };
 		523C73D2238D6A9E0056052A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73D1238D6A9E0056052A /* APIConstants.swift */; };
-		523C73D5238D6B360056052A /* ResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73D4238D6B360056052A /* ResponseString.swift */; };
+		523C73D9238D7BDD0056052A /* SignupResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73D8238D7BDD0056052A /* SignupResponseString.swift */; };
+		523C73DB238D7EFA0056052A /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523C73DA238D7EFA0056052A /* Mypage.storyboard */; };
+		523C73DE238D7FE90056052A /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73DD238D7FE90056052A /* MypageVC.swift */; };
+		523C73E0238D91390056052A /* RechargeAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73DF238D91390056052A /* RechargeAlertVC.swift */; };
+		523C73E2238D917A0056052A /* WithdrawAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73E1238D917A0056052A /* WithdrawAlertVC.swift */; };
+		523C73E4238DA1410056052A /* MypageResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73E3238DA1410056052A /* MypageResponseString.swift */; };
+		523C73E6238DA1F60056052A /* MypageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73E5238DA1F60056052A /* MypageService.swift */; };
+		523C73EB238DA7020056052A /* NanumGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73E8238DA7020056052A /* NanumGothic-Regular.ttf */; };
+		523C73EC238DA7020056052A /* NanumGothic-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73E9238DA7020056052A /* NanumGothic-ExtraBold.ttf */; };
+		523C73ED238DA7020056052A /* NanumGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73EA238DA7020056052A /* NanumGothic-Bold.ttf */; };
+		523C73F1238DA7510056052A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73F0238DA7510056052A /* UIFontExtension.swift */; };
+		523C73F3238DA7D80056052A /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73F2238DA7D80056052A /* FredokaOne-Regular.ttf */; };
 		FA38639328F885A25DF72D38 /* Pods_Sockttery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +64,18 @@
 		523C73CD238D685A0056052A /* SignupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupVC.swift; sourceTree = "<group>"; };
 		523C73CF238D693C0056052A /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		523C73D1238D6A9E0056052A /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
-		523C73D4238D6B360056052A /* ResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseString.swift; sourceTree = "<group>"; };
+		523C73D8238D7BDD0056052A /* SignupResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupResponseString.swift; sourceTree = "<group>"; };
+		523C73DA238D7EFA0056052A /* Mypage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Mypage.storyboard; sourceTree = "<group>"; };
+		523C73DD238D7FE90056052A /* MypageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageVC.swift; sourceTree = "<group>"; };
+		523C73DF238D91390056052A /* RechargeAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RechargeAlertVC.swift; sourceTree = "<group>"; };
+		523C73E1238D917A0056052A /* WithdrawAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithdrawAlertVC.swift; sourceTree = "<group>"; };
+		523C73E3238DA1410056052A /* MypageResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageResponseString.swift; sourceTree = "<group>"; };
+		523C73E5238DA1F60056052A /* MypageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageService.swift; sourceTree = "<group>"; };
+		523C73E8238DA7020056052A /* NanumGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Regular.ttf"; sourceTree = "<group>"; };
+		523C73E9238DA7020056052A /* NanumGothic-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-ExtraBold.ttf"; sourceTree = "<group>"; };
+		523C73EA238DA7020056052A /* NanumGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Bold.ttf"; sourceTree = "<group>"; };
+		523C73F0238DA7510056052A /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		523C73F2238DA7D80056052A /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
 		7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sockttery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A715D4876798572E445DA1D8 /* Pods-Sockttery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sockttery.release.xcconfig"; path = "Target Support Files/Pods-Sockttery/Pods-Sockttery.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +125,8 @@
 		523C73A9238D566B0056052A /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				523C73D3238D6AF30056052A /* Model */,
+				523C73E7238DA6C40056052A /* Font */,
+				523C73D7238D7BCA0056052A /* Model */,
 				523C73AE238D56CB0056052A /* Extensions */,
 				523C73AD238D56C00056052A /* Networking */,
 				523C73AC238D56B60056052A /* Scenes */,
@@ -123,6 +146,7 @@
 		523C73AC238D56B60056052A /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				523C73DC238D7FDB0056052A /* Mypage */,
 				523C73C9238D67400056052A /* Signup */,
 				523C73B7238D623D0056052A /* ViewController.swift */,
 			);
@@ -135,6 +159,7 @@
 				523C73B5238D620B0056052A /* SignupService.swift */,
 				523C73CF238D693C0056052A /* NetworkResult.swift */,
 				523C73D1238D6A9E0056052A /* APIConstants.swift */,
+				523C73E5238DA1F60056052A /* MypageService.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -150,6 +175,7 @@
 				523C73B9238D63380056052A /* UITabbar+Extension.swift */,
 				523C73BC238D63380056052A /* UIView+Extensions.swift */,
 				523C73BD238D63380056052A /* UIViewController+Extensions.swift */,
+				523C73F0238DA7510056052A /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -160,6 +186,7 @@
 				523C739B238D565F0056052A /* Main.storyboard */,
 				523C73A0238D56630056052A /* LaunchScreen.storyboard */,
 				523C73CB238D67700056052A /* Signup.storyboard */,
+				523C73DA238D7EFA0056052A /* Mypage.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -172,12 +199,34 @@
 			path = Signup;
 			sourceTree = "<group>";
 		};
-		523C73D3238D6AF30056052A /* Model */ = {
+		523C73D7238D7BCA0056052A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				523C73D4238D6B360056052A /* ResponseString.swift */,
+				523C73D8238D7BDD0056052A /* SignupResponseString.swift */,
+				523C73E3238DA1410056052A /* MypageResponseString.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		523C73DC238D7FDB0056052A /* Mypage */ = {
+			isa = PBXGroup;
+			children = (
+				523C73DD238D7FE90056052A /* MypageVC.swift */,
+				523C73DF238D91390056052A /* RechargeAlertVC.swift */,
+				523C73E1238D917A0056052A /* WithdrawAlertVC.swift */,
+			);
+			path = Mypage;
+			sourceTree = "<group>";
+		};
+		523C73E7238DA6C40056052A /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				523C73F2238DA7D80056052A /* FredokaOne-Regular.ttf */,
+				523C73EA238DA7020056052A /* NanumGothic-Bold.ttf */,
+				523C73E9238DA7020056052A /* NanumGothic-ExtraBold.ttf */,
+				523C73E8238DA7020056052A /* NanumGothic-Regular.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		871405CFBD1C9AB9B5556085 /* Frameworks */ = {
@@ -259,6 +308,11 @@
 			files = (
 				523C73A2238D56630056052A /* LaunchScreen.storyboard in Resources */,
 				523C739F238D56630056052A /* Assets.xcassets in Resources */,
+				523C73DB238D7EFA0056052A /* Mypage.storyboard in Resources */,
+				523C73ED238DA7020056052A /* NanumGothic-Bold.ttf in Resources */,
+				523C73EB238DA7020056052A /* NanumGothic-Regular.ttf in Resources */,
+				523C73F3238DA7D80056052A /* FredokaOne-Regular.ttf in Resources */,
+				523C73EC238DA7020056052A /* NanumGothic-ExtraBold.ttf in Resources */,
 				523C73CC238D67700056052A /* Signup.storyboard in Resources */,
 				523C739D238D565F0056052A /* Main.storyboard in Resources */,
 			);
@@ -313,14 +367,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523C73E0238D91390056052A /* RechargeAlertVC.swift in Sources */,
+				523C73DE238D7FE90056052A /* MypageVC.swift in Sources */,
 				523C73C6238D63380056052A /* UIImageView+Extensions.swift in Sources */,
 				523C73B6238D620B0056052A /* SignupService.swift in Sources */,
 				523C73C3238D63380056052A /* UIButton+Extensions.swift in Sources */,
 				523C7396238D565F0056052A /* AppDelegate.swift in Sources */,
+				523C73E2238D917A0056052A /* WithdrawAlertVC.swift in Sources */,
+				523C73E6238DA1F60056052A /* MypageService.swift in Sources */,
 				523C73B8238D623D0056052A /* ViewController.swift in Sources */,
-				523C73D5238D6B360056052A /* ResponseString.swift in Sources */,
 				523C73C8238D63380056052A /* UINavigationBar+Extension.swift in Sources */,
+				523C73F1238DA7510056052A /* UIFontExtension.swift in Sources */,
 				523C73CE238D685A0056052A /* SignupVC.swift in Sources */,
+				523C73E4238DA1410056052A /* MypageResponseString.swift in Sources */,
+				523C73D9238D7BDD0056052A /* SignupResponseString.swift in Sources */,
 				523C73C5238D63380056052A /* UIViewController+Extensions.swift in Sources */,
 				523C7398238D565F0056052A /* SceneDelegate.swift in Sources */,
 				523C73C2238D63380056052A /* NSNotificationName+Extension.swift in Sources */,
