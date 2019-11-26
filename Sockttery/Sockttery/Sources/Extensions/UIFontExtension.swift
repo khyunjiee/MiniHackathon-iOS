@@ -15,4 +15,8 @@ extension UIFont {
     return UIFont(name: "FredokaOne-Regular", size: 24.0)!
   }
 
+  class var textStyle2: UIFont {
+    return UIFont(name: "NanumGothicBold", size: 17.0)!
+  }
+
 }
