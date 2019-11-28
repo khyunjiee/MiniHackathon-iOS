@@ -2,7 +2,7 @@
 //  UIFontExtension.swift
 //  Sockttery
 //
-//  Created by 최은지 on 27/11/2019.
+//  Created by 최은지 on 28/11/2019.
 //  Copyright © 2019 김현지. All rights reserved.
 //
 

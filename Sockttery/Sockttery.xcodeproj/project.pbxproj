@@ -26,6 +26,7 @@
 		523C73CE238D685A0056052A /* SignupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73CD238D685A0056052A /* SignupVC.swift */; };
 		523C73D0238D693C0056052A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73CF238D693C0056052A /* NetworkResult.swift */; };
 		523C73D2238D6A9E0056052A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73D1238D6A9E0056052A /* APIConstants.swift */; };
+		523C73D5238D6B360056052A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		523C73D9238D7BDD0056052A /* SignupResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73D8238D7BDD0056052A /* SignupResponseString.swift */; };
 		523C73DB238D7EFA0056052A /* Mypage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523C73DA238D7EFA0056052A /* Mypage.storyboard */; };
 		523C73DE238D7FE90056052A /* MypageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73DD238D7FE90056052A /* MypageVC.swift */; };
@@ -36,16 +37,13 @@
 		523C73EB238DA7020056052A /* NanumGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73E8238DA7020056052A /* NanumGothic-Regular.ttf */; };
 		523C73EC238DA7020056052A /* NanumGothic-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73E9238DA7020056052A /* NanumGothic-ExtraBold.ttf */; };
 		523C73ED238DA7020056052A /* NanumGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73EA238DA7020056052A /* NanumGothic-Bold.ttf */; };
-		523C73F1238DA7510056052A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73F0238DA7510056052A /* UIFontExtension.swift */; };
 		523C73F3238DA7D80056052A /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 523C73F2238DA7D80056052A /* FredokaOne-Regular.ttf */; };
-		523C73D5238D6B360056052A /* ResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C73D4238D6B360056052A /* ResponseString.swift */; };
 		B6A41438238D68C50052484A /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A41437238D68C50052484A /* Login.storyboard */; };
 		B6A4143B238D69240052484A /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143A238D69240052484A /* LoginVC.swift */; };
 		B6A4143D238D724E0052484A /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143C238D724E0052484A /* LoginService.swift */; };
 		B6A4143F238D72E70052484A /* LoginResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4143E238D72E70052484A /* LoginResponseString.swift */; };
-		B6A4144C238DA53D0052484A /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A4144B238DA53D0052484A /* UIFontExtension.swift */; };
-		B6A4144D238DA5830052484A /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6A41446238D9F350052484A /* FredokaOne-Regular.ttf */; };
 		B6B416CC238DCA7D003AE038 /* MainAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B416CB238DCA7D003AE038 /* MainAlertVC.swift */; };
+		B6B41717238FD9A0003AE038 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6B41716238FD9A0003AE038 /* UIFontExtension.swift */; };
 		FA38639328F885A25DF72D38 /* Pods_Sockttery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,7 +80,6 @@
 		523C73E8238DA7020056052A /* NanumGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Regular.ttf"; sourceTree = "<group>"; };
 		523C73E9238DA7020056052A /* NanumGothic-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-ExtraBold.ttf"; sourceTree = "<group>"; };
 		523C73EA238DA7020056052A /* NanumGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Bold.ttf"; sourceTree = "<group>"; };
-		523C73F0238DA7510056052A /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		523C73F2238DA7D80056052A /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
 		7D61A72CF9C71FD1C1EF056F /* Pods_Sockttery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sockttery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A715D4876798572E445DA1D8 /* Pods-Sockttery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sockttery.release.xcconfig"; path = "Target Support Files/Pods-Sockttery/Pods-Sockttery.release.xcconfig"; sourceTree = "<group>"; };
@@ -90,9 +87,10 @@
 		B6A4143A238D69240052484A /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B6A4143C238D724E0052484A /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		B6A4143E238D72E70052484A /* LoginResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponseString.swift; sourceTree = "<group>"; };
-		B6A41446238D9F350052484A /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FredokaOne-Regular.ttf"; path = "../../../../../../Fredoka_One/FredokaOne-Regular.ttf"; sourceTree = "<group>"; };
+		B6A41446238D9F350052484A /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FredokaOne-Regular.ttf"; path = "/Fredoka_One/FredokaOne-Regular.ttf"; sourceTree = "<absolute>"; };
 		B6A4144B238DA53D0052484A /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		B6B416CB238DCA7D003AE038 /* MainAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainAlertVC.swift; sourceTree = "<group>"; };
+		B6B41716238FD9A0003AE038 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +112,7 @@
 				523C7393238D565F0056052A /* Products */,
 				E397FA486A74FE05ABE9E234 /* Pods */,
 				871405CFBD1C9AB9B5556085 /* Frameworks */,
+				B6B416CE238FCB25003AE038 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -194,7 +193,7 @@
 				523C73B9238D63380056052A /* UITabbar+Extension.swift */,
 				523C73BC238D63380056052A /* UIView+Extensions.swift */,
 				523C73BD238D63380056052A /* UIViewController+Extensions.swift */,
-				523C73F0238DA7510056052A /* UIFontExtension.swift */,
+				B6B41716238FD9A0003AE038 /* UIFontExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,12 +264,13 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		B6A41445238D9F250052484A /* Font */ = {
+		B6B416CE238FCB25003AE038 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				B6A4144B238DA53D0052484A /* UIFontExtension.swift */,
 				B6A41446238D9F350052484A /* FredokaOne-Regular.ttf */,
 			);
-			path = Font;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		E397FA486A74FE05ABE9E234 /* Pods */ = {
@@ -352,7 +352,6 @@
 				523C73EC238DA7020056052A /* NanumGothic-ExtraBold.ttf in Resources */,
 				523C73CC238D67700056052A /* Signup.storyboard in Resources */,
 				523C739D238D565F0056052A /* Main.storyboard in Resources */,
-				B6A4144D238DA5830052484A /* FredokaOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,10 +414,8 @@
 				523C73E2238D917A0056052A /* WithdrawAlertVC.swift in Sources */,
 				523C73E6238DA1F60056052A /* MypageService.swift in Sources */,
 				523C73B8238D623D0056052A /* ViewController.swift in Sources */,
-				523C73D5238D6B360056052A /* ResponseString.swift in Sources */,
-				B6A4144C238DA53D0052484A /* UIFontExtension.swift in Sources */,
+				523C73D5238D6B360056052A /* (null) in Sources */,
 				523C73C8238D63380056052A /* UINavigationBar+Extension.swift in Sources */,
-				523C73F1238DA7510056052A /* UIFontExtension.swift in Sources */,
 				523C73CE238D685A0056052A /* SignupVC.swift in Sources */,
 				523C73E4238DA1410056052A /* MypageResponseString.swift in Sources */,
 				523C73D9238D7BDD0056052A /* SignupResponseString.swift in Sources */,
@@ -426,6 +423,7 @@
 				523C7398238D565F0056052A /* SceneDelegate.swift in Sources */,
 				523C73C2238D63380056052A /* NSNotificationName+Extension.swift in Sources */,
 				B6A4143B238D69240052484A /* LoginVC.swift in Sources */,
+				B6B41717238FD9A0003AE038 /* UIFontExtension.swift in Sources */,
 				523C73C7238D63380056052A /* UIColor+Extensions.swift in Sources */,
 				B6A4143D238D724E0052484A /* LoginService.swift in Sources */,
 				523C73D2238D6A9E0056052A /* APIConstants.swift in Sources */,
