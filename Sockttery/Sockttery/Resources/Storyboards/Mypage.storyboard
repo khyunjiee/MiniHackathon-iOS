@@ -21,7 +21,7 @@
         <!--MypageVC-->
         <scene sceneID="z3a-1h-gOo">
             <objects>
-                <viewController storyboardIdentifier="Mypage" id="dVK-Of-e7F" customClass="MypageVC" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Mypage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dVK-Of-e7F" customClass="MypageVC" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qRa-bF-Fvx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -35,9 +35,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wU1-je-EKo">
                                 <rect key="frame" x="39" y="60" width="23" height="22"/>
                                 <state key="normal" image="backBtn"/>
-                                <connections>
-                                    <action selector="goMain:" destination="dVK-Of-e7F" eventType="touchUpInside" id="UaA-gF-lwe"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="dollarCopy6" translatesAutoresizingMaskIntoConstraints="NO" id="Ciz-xB-WGX">
                                 <rect key="frame" x="137" y="107" width="139" height="116"/>
@@ -124,6 +121,7 @@
                         <viewLayoutGuide key="safeArea" id="uyO-P5-QPj"/>
                     </view>
                     <connections>
+                        <outlet property="backBtn" destination="wU1-je-EKo" id="NK4-8S-Mqq"/>
                         <outlet property="chargeText" destination="hbA-GA-8HI" id="upp-Xc-chI"/>
                         <outlet property="rechargeBtn" destination="Nhu-HU-J7R" id="R3e-Hb-ZHO"/>
                         <outlet property="userId" destination="cfU-Ja-3xI" id="RDd-to-z8P"/>

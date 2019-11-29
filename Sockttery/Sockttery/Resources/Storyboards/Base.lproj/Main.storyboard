@@ -15,22 +15,22 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOUCH SOCKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuP-6K-7rp">
-                                <rect key="frame" x="62.5" y="181" width="289" height="47"/>
+                                <rect key="frame" x="66" y="181" width="282.5" height="48.5"/>
                                 <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treeBtn" translatesAutoresizingMaskIntoConstraints="NO" id="AdF-W8-YsX">
-                                <rect key="frame" x="-131" y="302" width="676" height="928"/>
+                                <rect key="frame" x="38" y="303.5" width="338" height="464"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarCopy6" translatesAutoresizingMaskIntoConstraints="NO" id="UbN-vB-HoJ">
-                                <rect key="frame" x="91" y="260" width="232" height="232"/>
+                                <rect key="frame" x="149" y="261.5" width="116" height="116"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-uH-Rqs">
                                 <rect key="frame" x="70" y="403" width="62" height="110"/>
@@ -78,12 +78,9 @@
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRD-EL-BCb">
                                 <rect key="frame" x="14" y="674" width="139" height="112"/>
                                 <state key="normal" image="myPageBtn"/>
-                                <connections>
-                                    <action selector="goMypage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g7o-hX-BsK"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZw-AA-R6f">
-                                <rect key="frame" x="126" y="1136" width="274" height="226"/>
+                                <rect key="frame" x="263" y="673.5" width="137" height="113"/>
                                 <state key="normal" image="moneyBtn"/>
                                 <connections>
                                     <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPz-kk-Vq3"/>
@@ -118,6 +115,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="mypageBtn" destination="jRD-EL-BCb" id="IWy-i0-oRL"/>
                         <outlet property="titleLabel" destination="AuP-6K-7rp" id="O1n-HK-C5y"/>
                     </connections>
                 </viewController>

@@ -15,7 +15,7 @@
         <!--LoginVC-->
         <scene sceneID="43e-f2-7Xe">
             <objects>
-                <viewController storyboardIdentifier="Login" id="U7c-p5-P4T" customClass="LoginVC" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" useStoryboardIdentifierAsRestorationIdentifier="YES" id="U7c-p5-P4T" customClass="LoginVC" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EaL-Hl-jHj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,9 +59,6 @@
                                 <state key="normal" title="로그인">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <action selector="doLogin:" destination="U7c-p5-P4T" eventType="touchUpInside" id="bpw-3B-wQH"/>
-                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCopy" translatesAutoresizingMaskIntoConstraints="NO" id="uuh-9a-bve">
                                 <rect key="frame" x="107" y="80" width="200" height="200"/>

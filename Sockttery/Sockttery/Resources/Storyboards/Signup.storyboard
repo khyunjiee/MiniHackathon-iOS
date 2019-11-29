@@ -21,7 +21,7 @@
         <!--SignupVC-->
         <scene sceneID="g7m-jX-x37">
             <objects>
-                <viewController storyboardIdentifier="Signup" id="Bnw-DH-zQB" customClass="SignupVC" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Signup" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bnw-DH-zQB" customClass="SignupVC" customModule="Sockttery" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lU5-zt-0WZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

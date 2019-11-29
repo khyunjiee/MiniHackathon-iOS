@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var titleLabel: UILabel!
-    
+    @IBOutlet var mypageBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,9 +29,8 @@ class ViewController: UIViewController {
             self.titleLabel.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
           },
         completion: nil)
-      
         
-        
+        mypageBtn.addTarget(self, action: #selector(goToMypage), for: .touchUpInside)
         
     }
     
@@ -65,12 +64,10 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func goMypage(_ sender: UIButton) {
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyPage") as? MypageVC {
-                vc.modalPresentationStyle = .fullScreen
-        
-                self.present(vc, animated: true, completion: nil)   // 식별자 가르키는 곳으로 이동
-            }
+    @objc func goToMypage() {
+        guard let nextVC = UIStoryboard(name: "Mypage", bundle: nil).instantiateViewController(withIdentifier: "Mypage") as? MypageVC else { return }
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
     }
     
     

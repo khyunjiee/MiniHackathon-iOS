@@ -17,15 +17,12 @@ class LoginVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
-
-       
 
         self.loginBtn.makeRounded(cornerRadius: 20.0)
         self.userId.makeRounded(cornerRadius: 18.0)
         self.userpw.makeRounded(cornerRadius: 18.0)
+        
+        loginBtn.addTarget(self, action: #selector(goToMain), for: .touchUpInside)
         
     }
     
@@ -45,39 +42,11 @@ class LoginVC: UIViewController {
     
    
 
-    @IBAction func doLogin(_ sender: UIButton) {
-        
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main") as? ViewController {
-                vc.modalPresentationStyle = .fullScreen
-        
-                self.present(vc, animated: true, completion: nil)   // 식별자 가르키는 곳으로 이동
-            }
-//
-//        guard let id = userId.text else { return }
-//        guard let pwd = userpw.text else { return }
-//
-//        LoginService.loginShared.login(id, pwd) {
-//            data in
-//
-//            switch data {
-//
-//            case .success(let data):
-//                print(data)
-//                print("login success")
-//            case .requestError(let message) :
-//                print(message)
-//                break
-//            case .serverErr:
-//                print(".serverErr")
-//            case .pathErr :
-//                print(".pathErr")
-//            case .networkFail:
-//                print(".networkFail")
-//                break
-//            }
-//
-//
-        }
+    @objc func goToMain() {
+        guard let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Main") as? ViewController else { return }
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
+    }
         
         
         

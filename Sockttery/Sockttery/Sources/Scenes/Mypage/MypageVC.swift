@@ -14,6 +14,7 @@ class MypageVC: UIViewController {
     @IBOutlet var chargeText: UILabel!
     @IBOutlet var rechargeBtn: UIButton!
     @IBOutlet var withdrawBtn: UIButton!
+    @IBOutlet var backBtn: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,8 @@ class MypageVC: UIViewController {
         // Do any additional setup after loading the view.
         rechargeBtn.layer.cornerRadius = 22
         withdrawBtn.layer.cornerRadius = 22
+        
+        backBtn.addTarget(self, action: #selector(goToMain), for: .touchDragInside)
     }
     
     @IBAction func rechargeAction(_ sender: UIButton) {
@@ -39,12 +42,10 @@ class MypageVC: UIViewController {
         self.present(myAlert, animated: true, completion: nil)
     }
     
-    @IBAction func goMain(_ sender: UIButton) {
-        if let vc = self.storyboard?.instantiateViewController(withIdentifier: "Main") as? ViewController {
-                vc.modalPresentationStyle = .fullScreen
-        
-                self.present(vc, animated: true, completion: nil)   // 식별자 가르키는 곳으로 이동
-            }
+    @objc func goToMain() {
+        guard let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Main") as? ViewController else { return }
+        nextVC.modalPresentationStyle = .fullScreen
+        present(nextVC, animated: true)
     }
     
 }
