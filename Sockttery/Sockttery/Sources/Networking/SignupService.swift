@@ -10,16 +10,16 @@ import Foundation
 import Alamofire
 
 struct SignupService {
-    static let shared = SignupService()
+    static let signupShared = SignupService()
     
-    func signup(_ userId: String, _ password: String, completion: @escaping (NetworkResult<Any>) -> Void) {
+    func signup(_ id: String, _ pwd: String, completion: @escaping (NetworkResult<Any>) -> Void) {
         let header: HTTPHeaders = [
             "Content-Type" : "application/json"
         ]
         
         let body: Parameters = [
-            "userId": userId,
-            "password": password
+            "userId": id,
+            "password": pwd
         ]
         
         Alamofire.request(APIConstants.SignupURL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header)
@@ -33,7 +33,7 @@ struct SignupService {
                             case 200:
                                 do {
                                     let decoder = JSONDecoder()
-                                    print(value)
+                                    print("value", value)
                                     let result = try decoder.decode(SignupResponseString.self, from: value)
                                     
                                     switch result.success {
@@ -41,7 +41,7 @@ struct SignupService {
                                         print("success")
                                         completion(.success(result))
                                     case false:
-                                        completion(.requestError(result.message))
+                                        completion(.requestErr(result.message))
                                     }
                                 }
                                 catch {

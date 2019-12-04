@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.8.2)
+  - SwiftGifOrigin (1.7.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.8.2)
+  - SwiftGifOrigin (~> 1.7.0)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - SwiftGifOrigin
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  SwiftGifOrigin: fbd6cf37afcfcf97a5c3db996ddc0492e5c5c145
 
-PODFILE CHECKSUM: fee6db6c09a970e92acdb8eece1f84d319a59dec
+PODFILE CHECKSUM: 9e0ba97c638e48d00b697e5291b3aa908b4bf829
 
 COCOAPODS: 1.8.4

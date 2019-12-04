@@ -6,9 +6,7 @@
 //  Copyright © 2019 김현지. All rights reserved.
 //
 
-import Foundation
-
 struct LoginResponseString: Codable {
-    let status: Int
+    let success: Bool
     let message: String
 }

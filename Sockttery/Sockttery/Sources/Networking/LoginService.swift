@@ -24,27 +24,55 @@ class LoginService {
             "password": pwd
         ]
         
-        // 서버로 request 전송 - http 비동기 통신 라이브러리 : 함수가 호출된 순차적으로 진행됨
+        // Alamofire는 비동기 방식이기 때문에 response가 오기 전에 함수를 실행함.
+        // 따라서 completion 핸들러를 escaping closure로 작성해 login 함수가 모두 반환된 후
+        // 즉 response가 서버로부터 응답이온 후에 실행이 되도록 한다.
         Alamofire.request(APIConstants.LoginURL, method: .post, parameters: body, encoding: JSONEncoding.default, headers: header)
-            .responseData { response in // response 에 결과값 저장 -> print 해보기
+            .responseData { response in
+                
+                //                print("request", response.request)
+                //                print("response", response.response)
+                //                print("data", response.data)
+                //                print("result", response.result)
                 
                 // parameter 위치
                 switch response.result {
                     
                 // 통신 성공 - 네트워크 연결
                 case .success:
-                    print("통신 성공")
-                    
-//                    if let value = response.response?.statusCode
-                    
-                    
-                    
-                // 네트워크 통신 실패
+                    if let value = response.result.value {
+                        
+                        if let status = response.response?.statusCode {
+                            switch status {
+                            case 200:
+                                do {
+                                    let decoder = JSONDecoder()
+                                    print("value", value)
+                                    let result = try decoder.decode(LoginResponseString.self, from: value)
+                                    
+                                    completion(.success(result.message))
+                                }
+                                catch {
+                                    print("경로가 잘못되었습니다.")
+                                    completion(.pathErr)
+                                    print(error.localizedDescription)
+                                    print(APIConstants.LoginURL)
+                                }
+                            case 400:
+                                completion(.pathErr)
+                            case 500:
+                                completion(.serverErr)
+                            default:
+                                break
+                            }// switch
+                        }// iflet
+                    }
+                    break
                 case .failure(let err):
                     print(err.localizedDescription)
                     completion(.networkFail)
+                    // .networkFail이라는 반환값이 넘어감
                     break
-                    
                 }
         }
     }

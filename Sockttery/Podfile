@@ -8,5 +8,6 @@ target 'Sockttery' do
   # Pods for Sockttery
 
 pod 'Alamofire', '~> 4.8.2'
+pod 'SwiftGifOrigin', '~> 1.7.0'
 
 end

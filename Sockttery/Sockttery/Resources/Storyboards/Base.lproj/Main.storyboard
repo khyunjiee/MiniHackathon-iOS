@@ -10,6 +10,9 @@
         <array key="FredokaOne-Regular.ttf">
             <string>FredokaOne-Regular</string>
         </array>
+        <array key="NanumGothic-Bold.ttf">
+            <string>NanumGothicBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--View Controller-->
@@ -21,16 +24,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOUCH SOCKS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuP-6K-7rp">
-                                <rect key="frame" x="66" y="181" width="282.5" height="48.5"/>
+                                <rect key="frame" x="62.5" y="181" width="289" height="47"/>
                                 <fontDescription key="fontDescription" name="FredokaOne-Regular" family="Fredoka One" pointSize="40"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="treeBtn" translatesAutoresizingMaskIntoConstraints="NO" id="AdF-W8-YsX">
-                                <rect key="frame" x="38" y="303.5" width="338" height="464"/>
+                                <rect key="frame" x="-131" y="302" width="676" height="928"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dollarCopy6" translatesAutoresizingMaskIntoConstraints="NO" id="UbN-vB-HoJ">
-                                <rect key="frame" x="149" y="261.5" width="116" height="116"/>
+                                <rect key="frame" x="91" y="260" width="232" height="232"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekH-uH-Rqs">
                                 <rect key="frame" x="70" y="403" width="62" height="110"/>
@@ -39,7 +42,7 @@
                                     <action selector="socksBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qTk-Ub-bwh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM0-3Z-ekj">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iM0-3Z-ekj">
                                 <rect key="frame" x="59" y="544" width="85" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="group5Copy11"/>
@@ -47,28 +50,28 @@
                                     <action selector="socksBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4qj-UA-h2t"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxL-fa-KEK">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VxL-fa-KEK">
                                 <rect key="frame" x="144" y="449" width="90" height="87"/>
                                 <state key="normal" image="group5Copy12"/>
                                 <connections>
                                     <action selector="socksBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MzC-YQ-Qt5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkW-5G-Kz5">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkW-5G-Kz5">
                                 <rect key="frame" x="295" y="501" width="84" height="106"/>
                                 <state key="normal" image="group5Copy8"/>
                                 <connections>
                                     <action selector="socksBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hUx-uc-RO2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYb-ih-8X2">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYb-ih-8X2">
                                 <rect key="frame" x="265" y="402" width="68" height="94"/>
                                 <state key="normal" image="group5Copy7"/>
                                 <connections>
                                     <action selector="socksBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vfv-aN-oAG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-hk-c3f">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IV0-hk-c3f">
                                 <rect key="frame" x="176" y="572" width="75" height="104"/>
                                 <state key="normal" image="group5Copy8"/>
                                 <connections>
@@ -80,7 +83,7 @@
                                 <state key="normal" image="myPageBtn"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZw-AA-R6f">
-                                <rect key="frame" x="263" y="673.5" width="137" height="113"/>
+                                <rect key="frame" x="126" y="1136" width="274" height="226"/>
                                 <state key="normal" image="moneyBtn"/>
                                 <connections>
                                     <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cPz-kk-Vq3"/>
@@ -121,7 +124,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="126"/>
+            <point key="canvasLocation" x="297" y="126"/>
         </scene>
         <!--Main AlertVC-->
         <scene sceneID="08O-nI-B8h">
@@ -148,13 +151,13 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100,000 원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N3U-Ji-8rC">
-                                        <rect key="frame" x="85" y="191" width="115" height="27"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                        <rect key="frame" x="85" y="191" width="115" height="25.5"/>
+                                        <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGx-Ug-fuA">
-                                        <rect key="frame" x="88" y="219" width="108" height="2"/>
+                                        <rect key="frame" x="88" y="217.5" width="108" height="2"/>
                                         <color key="backgroundColor" red="0.81568627450980391" green="0.070588235294117646" blue="0.20784313725490194" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="108" id="QUs-ZV-gt9"/>
@@ -162,35 +165,40 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqD-6v-jhU">
-                                        <rect key="frame" x="104" y="260" width="77" height="40"/>
+                                        <rect key="frame" x="104" y="258.5" width="77" height="40"/>
                                         <color key="backgroundColor" red="0.81568627449999997" green="0.070588235289999995" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="aOP-3D-2Ym"/>
                                             <constraint firstAttribute="width" constant="77" id="fz1-m8-Suv"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
                                         <state key="normal" title="계속하기">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Of8-5K-reh">
-                                        <rect key="frame" x="15" y="260" width="77" height="40"/>
+                                        <rect key="frame" x="15" y="258.5" width="77" height="40"/>
                                         <color key="backgroundColor" red="0.21568627450980393" green="0.51764705882352935" blue="0.22352941176470587" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="77" id="B64-Yb-33L"/>
                                             <constraint firstAttribute="height" constant="40" id="gnr-ur-WUD"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
                                         <state key="normal" title="확인하기">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="closeAction:" destination="I4I-rd-umN" eventType="touchUpInside" id="id4-RD-Fv4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="po8-by-iQM">
-                                        <rect key="frame" x="193" y="260" width="77" height="40"/>
+                                        <rect key="frame" x="193" y="258.5" width="77" height="40"/>
                                         <color key="backgroundColor" red="0.99607843137254903" green="0.6588235294117647" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="aSj-qw-Ofh"/>
                                             <constraint firstAttribute="width" constant="77" id="d4p-ub-cac"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="NanumGothicBold" family="NanumGothic" pointSize="14"/>
                                         <state key="normal" title="자랑하기">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>

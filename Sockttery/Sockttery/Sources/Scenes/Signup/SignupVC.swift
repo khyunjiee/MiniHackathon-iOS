@@ -29,7 +29,7 @@ class SignupVC: UIViewController {
         guard let userId = userId.text else { return }
         guard let userPw = userPw.text else { return }
         
-        SignupService.shared.signup(userId, userPw) {
+        SignupService.signupShared.signup(userId, userPw) {
             data in
             
             switch data {
@@ -37,7 +37,11 @@ class SignupVC: UIViewController {
                 let user_data = data as! SignupResponseString
                 self.simpleAlert(title: "가입 성공", message: "\(user_data.message)")
                 
-            case .requestError(let message):
+                guard let nextVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Main") as? ViewController else { return }
+                nextVC.modalPresentationStyle = .fullScreen
+                self.present(nextVC, animated: true)
+                
+            case .requestErr(let message):
                 self.simpleAlert(title: "가입 실패", message: "\(message)")
                 
             case .pathErr:

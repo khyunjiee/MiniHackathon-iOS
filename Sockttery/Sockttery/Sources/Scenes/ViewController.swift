@@ -11,8 +11,11 @@ import UIKit
 class ViewController: UIViewController {
     
     
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var mypageBtn: UIButton!
+    
+    var limitCount = 5
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +26,12 @@ class ViewController: UIViewController {
         self.titleLabel.layer.shadowRadius = 10
         
         UIView.animate(withDuration: 1,
-        delay: 0,
-        options: [UIView.AnimationOptions.autoreverse, UIView.AnimationOptions.repeat],
-        animations: {
-            self.titleLabel.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
-          },
-        completion: nil)
+                       delay: 0,
+                       options: [UIView.AnimationOptions.autoreverse, UIView.AnimationOptions.repeat],
+                       animations: {
+                        self.titleLabel.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
+        },
+                       completion: nil)
         
         mypageBtn.addTarget(self, action: #selector(goToMypage), for: .touchUpInside)
         
@@ -36,17 +39,50 @@ class ViewController: UIViewController {
     
     
     @IBAction func socksBtnClick(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.3, animations: {
-            sender.transform = CGAffineTransform(rotationAngle: 18.0)
-        }, completion: { _ in
-            UIView.animate(withDuration: 0.6, animations: {
-                sender.transform = CGAffineTransform(rotationAngle: -18.0)
+        self.limitCount -= 1
+        
+        if self.limitCount == 0{
+            UIView.animate(withDuration: 0.3, animations: {
+                sender.transform = CGAffineTransform(rotationAngle: 18.0)
             }, completion: { _ in
                 UIView.animate(withDuration: 0.3, animations: {
-                    sender.transform = CGAffineTransform.identity
+                    sender.transform = CGAffineTransform(rotationAngle: -18.0)
+                }, completion: { _ in
+                    UIView.animate(withDuration: 0.3, animations: {
+                        sender.transform = .identity
+                    }, completion: { _ in
+                        
+                            UIView.animate(withDuration: 0.3) {
+                                sender.transform = sender.transform.translatedBy(x: 0, y: 100)
+                            }
+                            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                            let myAlert = storyboard.instantiateViewController(identifier: "alert")
+                            myAlert.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+                            
+                            myAlert.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+                            
+                            self.present(myAlert, animated: true, completion: nil)
+                        
+                        
+                    })
+                    
                 })
             })
-        })
+        }else{
+            UIView.animate(withDuration: 0.3, animations: {
+                sender.transform = CGAffineTransform(rotationAngle: 18.0)
+            }, completion: { _ in
+                UIView.animate(withDuration: 0.3, animations: {
+                    sender.transform = CGAffineTransform(rotationAngle: -18.0)
+                }, completion: { _ in
+                    UIView.animate(withDuration: 0.3, animations: {
+                        sender.transform = .identity
+                    })
+                    
+                })
+            })
+        }
+        
     }
     
     @IBAction func showAlert(_ sender: UIButton) {
@@ -59,9 +95,6 @@ class ViewController: UIViewController {
         
         self.present(myAlert, animated: true, completion: nil)
         
-        
-        
-        
     }
     
     @objc func goToMypage() {
@@ -69,6 +102,5 @@ class ViewController: UIViewController {
         nextVC.modalPresentationStyle = .fullScreen
         present(nextVC, animated: true)
     }
-    
     
 }
